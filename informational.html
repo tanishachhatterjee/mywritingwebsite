@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanisha writes!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()" aria-label="toggle work menu">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="informational.html" class="active">informational</a>
+          <a href="narratives.html">narratives</a>
+          <a href="fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+
+    <!-- LIST VIEW -->
+    <div id="list-view">
+      <p class="section-label">informational</p>
+      <ul class="article-list" id="article-list"></ul>
+    </div>
+
+    <!-- DETAIL VIEW -->
+    <div id="detail-view">
+      <button class="back-btn" onclick="showList()">
+        <span class="back-arrow"></span> back
+      </button>
+      <p class="detail-label" id="detail-label"></p>
+      <h1 class="detail-title" id="detail-title"></h1>
+      <p class="detail-subtitle" id="detail-subtitle"></p>
+      <div class="detail-body" id="detail-body"></div>
+    </div>
+
+  </main>
+
+  <footer></footer>
+</div>
+
+<script>
+  // ── ARTICLES DATA ──
+  // Replace these with your real articles!
+  const articles = [
+  /*
+    {
+      title: "⟡ ",
+      category: "",
+      date: "",
+      body: `<p></p>
+             <p></p>`
+    },
+  */
+
+    {
+      title: "⟡ Electric Cars: The Future of Transportation",
+      subtitle: "Originally published on my old website, 2024.",
+      category: "Technology & Sustainability",
+      date: "Apr 2024",
+      body: `<p>Electric cars are vehicles that are powered by electrical motors that draw electricity from a battery. Since EVs run on electricity they produce zero emissions improving air quality and reducing the overall environmental impact. EVs have significant benefits to our community such as creating a sustainable and environmentally friendly future for generations to come. Our generation's transportation is responsible for approximately 50% of greenhouse gas emissions and 80% of air pollutants. This is not only dangerous to the environment but to humans as well. Gasoline vehicles burn fossil fuels and when they do this they release large amounts of carbon dioxide, a greenhouse gas, into the air that we breathe causing pollution. Additionally, as greenhouse gas emissions surround the Earth, they trap the sun's heat leading to global warming and climate change. It's our job to put an end to global warming and the first step is to transition to electric cars.</p>
+             <h2>The Technology Behind Electric Cars</h2>
+             <div class="photo-row">
+               <img src="evpics/evwithwords (1).jpeg" alt="Electric car technology" />
+               <img src="evpics/evdiagram2 (1).jpeg" alt="Electric car charging" />
+             </div>
+             <p>Electric cars are powered by rechargeable batteries that store electricity. When you charge the car, the batteries store electricity to operate. The electric motor is like an engine but it runs on electricity instead of gas. When you press the accelerator, the electric motor receives electricity from the battery, and then controls the speed of the car. Unlike traditional vehicles, EVs don't have multiple gears to shift the car between accelerating and decelerating. The gears are necessary to gasoline vehicles because it allows the driver to run the engine at different speeds. But EVs have electric motors that generate a large range of different speeds defeating the need of gears. The wheels of an EV are powered by the electric motor, and when the brake is used, some of the energy is captured and is used to recharge the batteries. Altogether, EVs are powered by batteries that store electricity and are energy efficient.</p>
+             <h2>The Promising Future of Electric Cars</h2>
+             <p>Along with being an eco-friendly mode of transportation, EVs are also affordable vehicles. EVs may be more expensive during the buying process but the maintenance fee is half as much as gasoline drivers have to pay. Customers who own electric cars save an average of $4,600 in repair and maintenance costs. However, EVs are the newest technology when it comes to vehicles making them more expensive. But as the production of EVs continues to increase the price will eventually fall making it more affordable.</p>
+             <div class="photo-row">
+               <img src="evpics/coolev.png" alt="EV savings" />
+               <img src="evpics/futureev.jpeg" alt="Future of electric vehicles" />
+             </div>
+             <p>The future of EVs are quite promising considering ongoing technology advancements, an increase of investments, and growing consumer interest. It's predicted that there will be improvements in the battery such as the energy density, charging speed, and cost reduction. Also autonomous driving technologies may become more widespread in EVs. Enhancing the overall driving experience and contributing to the development of new technology in transportation systems. Governments may also begin implementing stricter regulations about emissions, further encouraging the shift towards EVs. Additionally, governments are investing in buildings for charging the vehicles, making EVs more practical for everyday use. Lastly, as EVs become more popular there will be more competition and variety in the vehicles. Allowing customers to have more choices in affordable EVs. EVs are the future of technology.</p>
+             <h2>The Companies Shaping the Future of Electric Cars</h2>
+             <div class="photo-company">
+               <img src="evpics/tesla.webp" alt="Tesla" />
+               <p>Tesla was founded on July 1, 2003, San Carlos, CA by Martin Eberhard and Marc Tarpenning. The current CEO, Elon Musk, joined the company soon after it was founded and became the largest investor of the company. Tesla's mission is to transition the world to sustainable energy by building products that replace the planet's biggest polluters, gasoline vehicles. Tesla is doing this by making vehicles that are powered by solar energy running on batteries. The company installed 32,400 kW of solar at their factories and plans on adding more. Altogether, Tesla strives to transition the world to sustainable energy through solar-powered vehicles.</p>
+             </div>
+             <div class="photo-company">
+               <img src="evpics/lucid.jpeg" alt="Lucid Motors" />
+               <p>Lucid Motors was founded in 2008 by former Tesla Motors Vice President, Bernard Tse, co-founder of Astoria Networks Sam Weng, and inventor Sheaupyng Lin. Lucid wants to promote the acceptance of sustainable energy by creating captivating electric vehicles centered around the human experience. The company is making an impact by using fewer batteries and less grid electricity. This has reduced the demand for critical materials and their environmental impact. All in all, Lucid aims to create sustainable vehicles without compromising the overall experience of driving.</p>
+             </div>
+             <div class="photo-company">
+               <img src="evpics/nio.webp" alt="NIO" />
+               <p>NIO was founded in November 2014 by William Li, a Chinese business executive and entrepreneur. NIO's mission is to shape a joyful lifestyle around the premium smart electric vehicle market. NIO plans to build a green ecosystem in the Sanjiangyuan National Park and provide its smart electric vehicles along with building battery charging facilities. NIO has launched Blue Sky Lab, an innovation that recycles materials in automobile manufacturing, such as airbags, seat belts, microfiber, leath, and aluminum, to create fashion products. Overall, NIO aims to promote sustainable car manufacturing to bring positive changes to communities.</p>
+             </div>`
+    },
+
+    {
+      title: "⟡ The Dangers of Underwater Noise",
+      category: "Environment",
+      date: "Mar 2023",
+      body: `<p>For many years, there has been a debate whether or not underwater noises disturb marine life. Scientists have conducted studies by attaching a digital recording device to beaked whales to check how they respond to noises. Some of the studies showed no negative impacts, while others showed a large amount of disruption. Although some studies suggest that sonar activities are not detrimental to marine life, it has been shown that it can disturb their communication and behavioral patterns. Therefore, sonar activities have a negative impact on marine life.</p>
+             <p>The Navy’s studies indicate that sonar does not adversely harm marine animals; however, an incident in the Bahamas suggests otherwise. According to What Underwater Noise?, “The issue became critical after an incident in 2000 in which 17 whales became stranded in the Bahamas.” These underwater noises caused disruptions in beaked whales' communication with each other, leaving them separated from their pod. Also, this severe incident can stress a beaked whale, which can result in changes to their behavioral patterns.</p>
+             <p>Scientists have studied marine life patterns during sonar activities, showing that these underwater noises disturb their behavioral patterns. According to What to Do about Underwater Noise, “The data suggested that beaked whales were especially sensitive to even low levels of underwater noise.” To this point, even low levels of sonar activity have a significant impact on animal behavior, causing interruptions to their feeding and diving patterns. These underwater noises destroy the health and wellbeing of marine life.</p>
+             <p>In light of these findings, sonar activity has been shown to be disruptive to marine life, causing them to become stranded and responsible for changing their behavior patterns. Should these sonar activities continue, more marine creatures are likely to become stranded or separated from their groups. Additionally, stress could change their patterns, causing a shorter life span, which may also result in extinction. We need to immediately put an end to sonar activity.</p>`
+    },
+    {
+      title: "⟡ Why are Wildfires Destructive?",
+      category: "Environment",
+      date: "Aug 2022",
+      body: `<p>Big orange flames start spreading through a forest. Animals flee from the scene as chaos erupts. Firefighters come with their water hoses and extinguishers. As the smoke begins rising, firefighters begin coughing. Soon the wildfire gets out of control, people start fleeing from their homes with their loved ones. As the traffic gets worse, people start getting out of their cars and start fleeing by foot. This is what happens when a wildfire begins. It may seem manageable at first but soon gets out of hand. People have been suffering from the effects of wildfires for years. Many got lung cancer from the smoke while evacuating their homes, while others got into a car accident because they couldn’t see the road ahead of them due to the smoke. It is critical that we save our resources before another disaster strikes. Let’s finally take action and learn more about why wildfires are destructive.</p>
+             <h2>Trees Burned Down & Release of Carbon</h2>
+             <p>Generally wildfires occur in forests which have trees and other plants.You may already know that trees produce a type of oxygen called CO2 (carbon dioxide), which is the type of oxygen that we breathe. When trees are burned down, they start producing a new type of oxygen, which is not safe for humans. This new type of oxygen is called carbon. For example, if you were to breathe in carbon you would start having difficulty breathing, which could soon lead you to the hospital.</p>
+             <p>It may feel like if one tree is burned down it doesn’t affect the environment, but it does. Soon after one tree is burned down the fire starts spreading tree to tree, which soon affects climate change. Carbon can increase global warming because once carbon continues building up, it will soon start melting all of the ice around the world, which soon endangers multiple species such as polar bears or penguins. If trees continue burning down, there will soon be many extinct species.</p>
+             <p>Therefore, when trees are burned down the new oxygen that is released from trees not only affects our lungs but also climate change. So make sure to stay safe if by chance there is a wildfire burning near you.</p>
+             <h2>Bad Air Quality</h2>
+             <p>Many counties in California have been quarantined this year due to the bad air quality from wildfires like the Dixie fire. Students are not allowed to have recess or lunch outdoors. Many people have been staying at home and have not yet left their homes. This impacts our bodies because when we are inside, we can’t exercise as much as we can outside. For example, when we are outside, we can run around and jog around our neighborhood. However, when we are locked up inside, we can’t run around without bumping into furniture or other objects. Many people don’t have exercising equipment at home, so they have to rely on running or other exercises that require outdoors. It can be dangerous if someone were to run or jog when a wildfire broke out because the smoke would soon reach their lungs, which can lead to them having an asthma attack or other breathing problems.</p>
+             <p>Speaking of health problems, wildfires can cause people with asthma to not go outside in the smoke without coughing and choking. Firefighters can possibly get lung cancer if they don’t wear special masks when extinguishing a fire. Even if they wear them they can still get lung cancer and other breathing problems, which can possibly soon lead to their death if their breathing problems continue getting worse.</p>
+             <p>Due to the smoke and bad air quality, many people need special care so that they can breathe properly. When wildfires break out, they send many people to hospitals because they got burns, they got into a car accident, or they are having trouble breathing. This also means many people need to pay for hospital or doctor visits, and if a patient keeps visiting, they can soon start losing lots of money especially if they don't have medical insurance. While people are evacuating their homes they may be speeding through the thick clouds of smoke and they can possibly crash into someone else because the road ahead of them is unclear due to the smoke. “We were surrounded by fire. We were driving through fire on each side of the road,” Police Officer Mark Bass said. “Nobody could hardly see the road ahead. It was a very dangerous situation,” said Mark Bass.This can also cause people to go to hospitals. As you can see, wildfires even have an effect on money and health, so it is very important that you safely evacuate your home or wherever you are in case of a wildfire.</p>
+             <h2>Homelessness Rising Due to Wildfires</h2>
+             <p>Many homes have been burned down due to severe wildfires. This is causing homelessness to increase because when someone’s home is burned down they might not have anywhere to go or to live because they don’t have any family living near them. This means they need to live on the unsafe streets or homeless shelters. But there may not be any homeless shelters or the homeless shelters are all full. This means someone might need to live on the streets. This will soon become a problem because in California wildfires are pretty common and happen multiple times a year. In San Francisco, California there are many homeless people living on the streets and if more homes are burned down the population of San Francisco might continue growing which can become a problem because if there are more people more jobs will need to be required.</p>
+             <p>In 1980, Mount St.Helens erupted and started many wildfires. About $1.1 billion of property was damaged due to the severe wildfires and lava caused by the eruption. Sadly, 57 people passed away because of the wildfires and lava. The news about the eruption spread fast. Soon news channels started reporting about the eruption.“That is so scary,” said 12 year old Lisa Hodson. After watching the news about the eruption. According to Lisa Hodson there was a lot of ash and soot in the air around the area where Mount St.Helens erupted. Lisa Hodson also said that there were some people in the way of the lava.</p>
+             <p>Every year homes are burned down due to wildfires and people become homeless. We need to improvise and think smarter. One way we can do this is by opening more homeless shelters around areas where wildfires are more common and more severe. Let’s end homelessness!</p>
+             <h2>Impact on Wildlife & Plants</h2>
+             <p>Imagine your favorite animal going extinct. For example, imagine your favorite animal is a bird. A lot of birds live in forests which is a common place where wildfires occur. Think about a bird’s family trying to fly away from the smoke and fire. Some might lose their family because they can’t see what direction they went due to the smoke. Or some of the older birds and younger birds might die because they can't survive the bright red and orange flames.</p>
+             <p>Wildfires make wildlife find more habitats. This can be a major con or problem  because while animals are trying to find a new home or habitat they might run into humans or hunters they have been trying to avoid. But everything has its own pros and cons. But look at the bright side luckily most animals can use their senses to detect when a fire is started. For example, they can tell you their sense of smell to detect if they smell anything burning. They can also use their sense of sight to see if they can see any smoke or fire coming their way. Another pro of wildfires is that it affects a species named jack pine which can only produce seeds to grow more trees with fire. A lot of plants die in the forest because they don’t get enough sunlight because there are too many trees blocking the sunlight. But when fires burn down trees they allow other plants to grow in the sunlight. Wildfires can also deplete food for animals. For example, generally when wildfires occur they burn down plants which a lot of animals survive on. As you can see, it's quite difficult to tell if wildfires are good or bad because they have a lot of pros and cons about it.</p>
+             <p>Wildfires have different effects on everything. In this article I discussed different things that are affected by wildfires. For example, I discussed that wildfires affect the oxygen that we breathe. I also discussed that wildfires affect climate change. The message I hope to spread is why wildfires are destructive and how we can prevent wildfires from affecting our daily lives. If you would like to learn more about wildfires feel free to check out https://education.nationalgeographic.org/resource/wildfires/ and https://www.plt.org/educator-tips/wildfires-causes-effects-educational-activities</p>`
+    },
+    {
+      title: "⟡ Vote No for Chocolate Milk",
+      category: "Argumentative",
+      date: "Apr 2022",
+      body: `<p>At the beginning of the school year at Stocklmeir we had chocolate milk but eventually the school stopped providing it for us. Some people believe that chocolate milk should still be provided while others think it shouldn’t. Because of this people are reconsidering their decision about chocolate milk. I believe that chocolate milk should not be brought back to school because it's unhealthy, kids get addicted, and parents and experts agree.</p>
+             <p>Critics like the article Flavored Milk FAQ argue that children drink more milk when it’s flavored which makes them gain more vitamins and nutrients. While it might be true that children drink more milk. Still, all in all, I think that if children are only drinking milk when it’s flavored, is a big problem because in life children won't always get what they want. So one reason why I vote no to chocolate milk is because it's unhealthy. According to Chocolate Milk: More Harmful than Healthful, “chocolate milk has a sky-high sugar content.” This shows that chocolate milk has a lot of sugar, which means that if kids drink too much of it they might become obese. When kids drink a lot of sugar they tend to get very hyper, which is a big problem considering that they will be in class learning. So when kids start getting hyper they are unable to focus and they not only disturb their learning but the students around them as well. According to Jamie Oliver, a food lover and activist, states that, “sugary drinks are a major risk factor for developing type 2 diabetes and heart disease.” This shows that children could be at risk of developing a deadly disease that adults could have prevented. Also children may even die because heart disease is very dangerous. Ann Cooper, the head of nutrition services for the Boulder Valley School District in Louisville, Colorado, was the cause of the chocolate milk ban. This shows that even nutritionists believe that chocolate milk is unhealthy. It also shows that nutritionists think that white milk or other options are healthier than chocolate milk. As you can see, chocolate milk is unhealthy because it has too much sugar and because it can cause diseases like type 2 diabetes and heart disease.</p>
+             <p>Another reason why chocolate milk should not be brought back to Stocklmeir is because kids get addicted. According to the article Chocolate Milk: More Harmful Than Healthful, states that, “some children consume as many as 10 or even 15 cartons of chocolate milk in a week at school.” This shows that kids are getting more and more addicted day by day. Also if children are drinking this much sugar they won't feel hungry enough to be able to eat healthy nutritious food. Jamie Oliver, an expert, filled a school bus with 57 tons of sand, representing the amount of sugar children in the United States consume in just one week at school. This shows that students are consuming an absurd amount of sugar. 57 tons is also 114,000 pounds! Children need to stop consuming all this sugar otherwise they will suffer a big consequence like falling severely sick. Chole Baker, an investigative reporter, stated that, “it’s an out-of-control problem.” This shows that even outsiders believe that children are becoming wildly addicted to sugar. To add on, obesity remains a growing problem in the United States. Since this is happening schools have been getting more attention from people outside of schools, which shows that the problem is getting even more terrible. Thus, children all around the world could be saved from this villain (chocolate milk) that we can easily get rid of. Therefore, we should not bring back chocolate milk because kids get addicted. Some people like Melissa Dobbins still may disagree, saying that chocolate milk is critical for a child’s diet. I challenge this. I don’t think this is true because there are different alternatives to milk that have the same 9 essential nutrients like milk or cheese. Also chocolate milk also has too much sugar which is not good for kids.</p>
+             <p>My most important reason why chocolate milk should not be brought back to school is because parents and experts agree. Chloe Baker, an investigative reporter, interviewed a child who stated, “ The only time I get chocolate milk is when I go to school.” This shows that even parents think that chocolate milk isn't a healthy choice for their child. Also if a parent is not comfortable about something at home then it's not okay for it to happen at school. New York City Mayor, Michael Bloomberg, was among those people who agreed with the ban. This shows that the problem has gotten so bad that it has even reached a city mayor who agrees with the ban. And since the government probably wants what’s best for us we should believe them. Also the New York City Board of Health approved the ban. This shows that even experts believe chocolate milk is very unhealthy and is not safe for our community. And since the problem is so bad the board even decided to go as far as banning it. Therefore, chocolate milk should not be brought back to Stocklmeir because parents and experts agree.</p>
+             <p>I vote no on chocolate milk because it isn’t good for our bodies, children drink too much of it, and experts and parents agree with the ban. As you can see chocolate milk may have some good parts to it but overall it's better to avoid it because it doesn’t do much good as it does harm. Lastly, the life lesson here is that it's important to protect our community by keeping it healthy and keeping it happy and we can do this by just avoiding our villain (chocolate milk). So when you decide to vote if chocolate milk should be brought back to school, think about all the healthy lives you could save and protect from all of those cruel diseases.</p>`
+    },
+    {
+      title: "⟡ The Horrible Pushing Game",
+      category: "Current Issue",
+      date: "Jan 2022",
+      body: `<p>On January 26, 2022 the kindergarteners at Stocklmeir Elementary School made a new game where they would bolt and pounce on each other. One witness even fell down and injured her leg very badly, and needed the assistance of an adult.</p>
+             <p>Many of the 5th graders who volunteered to take care of the kindergarteners ordered and demanded the kindergarteners to immediately stop playing that game. But the kindergarteners refused to stop.</p>
+             <p>Multiple of the kindergarteners continued getting seriously injured. Witnesses were not able to fully identify the mysterious suspects who started the game. The 5th graders tried to make up a new game, but reluctantly there were still some kids playing the harmful game.</p>
+             <p>Although the kindergarteners enjoyed the game at first the fun quickly faded away as they continued playing. The game took an utter turn causing many of the kids to get injured. If this game continues thriving many of the kids will continue getting injured.</p>
+             <p>This dreadful and pain inducing game needs to come to a stop at once.</p>`
+    },
+    {
+      title: "⟡ Too Many Items in the Lost & Found",
+      category: "Current Issue",
+      date: "Dec 2021",
+      body: `<p>The lost & found cart at Stocklmeir Elementary School, Sunnyvale CA receives many lost items everyday. All the items have started to pile up in the cart. Many of the owners of the lost items have not come back to the lost & found to receive their lost items. Some students believe that if they go to the lost & found to find their lost item their time will be wasted.</p>
+             <p>This is slowly becoming a problem at Stocklmeir Elementary School, because if the cart continues piling up with items there will be no more space for any new lost items. Which then will be harder for the owner to find their lost item or items.</p>
+             <p>Students will need to start taking responsibility with their items. Or sooner than later Stocklmeir might need to remove the lost & found cart because it keeps piling up. Tanisha Chatterjee a student at Stocklmeir believes that, “Students who lost items should go to the lost & found and find their item because otherwise its a waste of money for whoever bought the item for them.”</p>
+             <p>If this problem continues lots of money will be wasted for whoever bought an item for a student, and they lost it. It is important for the students who lost an item to go to the lost & found to search for their items or otherwise Stocklmeir might have to take the lost & found away.</p>`
+    },
+    {
+      title: "⟡ Sticker Problem",
+      category: "Current Issue",
+      date: "Nov 2021",
+      body: `<p>On November 21, 2021 Tanisha Chatterjee and her friends went to a volunteering program at Stocklmeir Elementary school for 5th graders. Tanisha and her friends recently found out that they can give stickers to the kindergarteners if they pick up trash or do something kind.</p>
+             <p>At first all the kindergarteners were picking up trash and being kind. But after some time, the kindergartens started lying to the 5th graders. “One kindergartener picked up 3 pieces of trash, so I gave her a sticker but after a few minutes she told me she lost her sticker. So I was about to give her another sticker but then I saw on the palm of her hand that there was a sticker I already had given her,” says Tanisha Chatterjee.</p>
+             <p>The kindergarteners feel like whoever has the most stickers gets a prize, so they decide to lie because they're too young to understand that they only get 1 sticker. Tanisha and her friends continue taking care of the kindergarteners, but they keep asking for more stickers.</p>
+             <p>So after lunch ended, Tanisha Chatterjee and her friends went to Ms.Mommer, the vice principal of Stocklmeir Elementary school. Tanisha and her friends told Ms.Mommer about what’s been happening with the stickers. Ms.Mommer told Tanisha Chatterjee and her friends, “to keep a track on which kids already got a sticker, and when it’s reasonable to give a sticker.”</p>
+             <p>If the kindergarteners continue lying to the 5th graders, Ms.Lee (the teacher who supervises the lunch buddy meetings) might have to stop the sticker policy entirely.</p>`
+    },
+    {
+      title: "⟡ Wasted Food at Stocklmier Elementary School",
+      category: "Environment & Community",
+      date: "Oct 2021",
+      body: `<p>Over the past few years, food has been neglected at Stocklmeir Elementary School, Sunnyvale CA. Students have been throwing and pushing food off the trays where the hot lunch lines are at Stocklmeir. Students of Stocklmier have been wasting their food and leaving it on the blacktop, with loads of items that were unopened.</p>
+             <p>Milk cartons, apple slices, vegetables, and many more items are left on the blacktop multiple times in a school day. Students walk past all the wasted food every single day but don’t have the heart to take one second to throw it away to make their school 1% cleaner.</p>
+             <p>On October 20, 2021 Tanisha Chatterjee observed all the 3rd graders during their lunch break. Tanisha saw multiple kids throwing food at each other, and running to play without throwing away their trash. “All of these students feel like if they spend a few seconds throwing away their trash, their entire playtime will be over,” Tanisha says. Tanisha continues observing the students. Tanisha also notices that only about 5% of the students who were at lunch threw away their trash. While the rest ran to play.</p>
+             <p>If this problem does not stop soon, food will start piling up on the blacktop. Sooner or later the students will need to start taking responsibility for their own trash before their lunch even might be taken away from them.</p>`
+    },
+    {
+      title: "⟡ All About COVID-19",
+      category: "Health",
+      date: "Mar 2020",
+      body: `<h2>What is COVID-19?</h2>
+             <p>COVID-19 is a very dangerous virus. COVID-19 is in the air and will always be in the air but that doesn't mean you're always going to feel sick when you go outside. But you can get COVID-19 if your immune system is strong.You are probably wondering “what is an immune system?” First of all we all have an immune system. Our immune system is something that prevents you from getting sick all the time but if your immune system is weak you can get sick more quickly than other people. “How to have a strong immune system.” The first step of making your immune system strong is to eat vegetables and fruits more than eating junk food.It's okay if you have junk food sometimes but it's not okay if you eat junk food all the time cuz if you eat junk food all the time your immune system is going to be very very weak and that means you can't fight off viruses and diseases that well as other people can.The last step of making your immune system strong is to work out. When I'm saying workout I'm not saying that you have to work out for three straight hours I'm talking about you should workout for at least 30 minutes per day or1 hour per day that should be good enough for your body.Running, jogging ,doing push ups, riding your bike, doing jumping jacks,and doing any type of exercise is a great workout and also it's fun you won't be getting bored like you could cut up half an hour an hour and different sections and do different activities. </p>
+             <h2>Is COVID-19 dangerous?</h2>
+             <p>COVID-19 is very dangerous. You are probably wondering why is COVID-19 dangerous? COVID-19 is dangerous because it kills people and because it also makes your immune system weaker. If your immune system is weak you can get sick quicker than normal people do.</p>
+             <h2>Can we still go outside?</h2>
+             <p> You can still go outside. Except you can't go to restaurants, malls, car washes, nail salons, spas, you can't go anywhere except the grocery store if you are in need of groceries. But most people now are using instacart and other online grocery store apps so they don’t need to go to the grocery stores.But of course a lot of people are still going to the grocery stores.People are still going for walks outside but if you go for a walk anywhere make sure you wear a mask to prevent you from getting COVID-19.</p>
+             <h2>Why do we have to be quarantined in this pandemic?</h2>
+             <p>We have to be quarantined in this pandemic because we don’t want to spread the COVID-19 to everyone.We are quarantined so we have a lower chance of getting COVID-19 cuz if we are not quarantined it is harder for all the doctors and nurses to take care of us.If there are trillions of people who are sick doctors and nurses will not be able to take care of them and the doctors and nurses will also get very sick too.</p>
+             <h2>Fun Facts</h2>
+             <p>1. COVID-19 came from Wuhan, China.</p>
+             <p>2. Scientists and doctors think that a bat caused COVID-19.</p>
+             <p>3. Some people think that COVID-19 will go away after June comes and will come back when winter starts again.</p>
+             <p>4. COVID-19 attaches to your cell and when your cell can’t hold it anymore it pops and COVID-19 goes all over your body and you start getting sick.</p>
+             <p>5. Doctors are saying that it will take about a year to find a vaccine for COVID-19.</p>
+             <p>6. COVID-19 looks like a tiny ball that has spikes.</p>
+             <p>7. COVID-19 has glucose in it.</p>
+             <p>8. You have a higher chance of getting COVID-19 if you have another disease.</p>
+             <p>9. If you are 65+ you also have a higher chance of getting COVID-19.</p>
+             <p>10. You can not get COVID-19 by eating food.</p>
+             <p>11. If you wash your hands a lot you have a lower chance of getting COVID-19.</p>`
+    },
+  ];
+
+  // ── RENDER LIST ──
+  const listEl = document.getElementById('article-list');
+  articles.forEach((article, i) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <button onclick="showArticle(${i})">
+        <span class="article-title">${article.title}</span>
+        <span class="article-meta">${article.date}</span>
+      </button>`;
+    listEl.appendChild(li);
+  });
+
+  // ── NAVIGATION ──
+  function showArticle(i) {
+  const a = articles[i];
+  document.getElementById('detail-label').textContent = a.category;
+  document.getElementById('detail-title').textContent = a.title;
+  document.getElementById('detail-subtitle').textContent = a.subtitle || '';
+  document.getElementById('detail-body').innerHTML = a.body;
+  document.getElementById('list-view').style.display = 'none';
+  document.getElementById('detail-view').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showList() {
+    document.getElementById('detail-view').style.display = 'none';
+    document.getElementById('list-view').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── DROPDOWN ──
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

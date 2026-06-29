@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanisha writes!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="nav-logo">Tanisha C.</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">home</a></li>
+      <li><a href="journey.html">journey</a></li>
+
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()" aria-label="toggle work menu">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="informational.html">informational</a>
+          <a href="narratives.html">narratives</a>
+          <a href="fiction.html">fiction</a>
+        </div>
+      </li>
+
+      <li><a href="interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div class="intro">
+      <div class="intro-text">
+        <h1>Hi, I'm Tanisha!</h1>
+        <p>
+          I'm going into my sophomore year of high school. I'm interested in robotics, coding, sustainable technology, and, of course, writing!!!
+        </p>
+        <p>
+          Outside of academics, my hobbies are baking, hiking, snorkeling, kathak (traditional indian dance), getting boba, and hanging out with friends.
+        </p>
+        <p>
+          Thank you for visiting my webite! 
+        </p>
+        <button class="email-btn">send me an email 💌 → tanishachatterjee.writes@gmail.com </button>
+      </div>
+      <img src="me.JPG" alt="tanisha" class="profile-photo" />
+    </div>
+
+    <div class="divider"></div>
+
+  </main>
+
+  <footer>
+  </footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

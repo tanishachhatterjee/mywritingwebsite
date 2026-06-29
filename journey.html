@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanisha writes!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="journey.html" class="active">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()" aria-label="toggle work menu">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="informational.html">informational</a>
+          <a href="narratives.html">narratives</a>
+          <a href="fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+
+    <!-- PAGE LABEL + INTRO -->
+    <p class="section-label">journey</p>
+    <h1>This website is to showcase the growth of my writing. </h1>
+
+
+    <!-- SECTION 1 -->
+    <p class="section-label">where it started</p>
+    <div style="max-width: 580px;">
+      <p>
+        My interest in writing sparked when the pandemic hit. I am a very talkative person (you can ask my family and friends), and I love sharing stories. Once school moved online, I wasn’t able to share stories with my friends like I used to, so I began writing just for fun! Soon, I started really enjoying writing because it was a way for me to relive my happy and funny memories.
+      </p>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <p class="section-label">where i've been</p>
+    <div style="max-width: 580px;">
+      <p>
+        Then I started to write about issues I saw in my school because I realized I could use my voice to influence people to be better. Soon after, I started expanding those issues to the world, like air pollution. This allowed me to not only educate others about these problems but also educate myself. One of the articles I wrote was about a solution to air pollution: electric cars. This article sparked my passion for sustainable technology and technology that makes the world a better place environmentally. Researching and writing about new topics helps me to become curious about subjects that I otherwise would not have explored.
+      </p>
+    </div>
+
+
+    <!-- SECTION 3 -->
+    <p class="section-label">where i'm going</p>
+    <div style="max-width: 580px;">
+      <p>
+        Now, I am expanding my writing by interviewing people working in the STEM industry and writing articles about their experiences, challenges, and accomplishments. The reason I am doing this is not only to grow as a writer by trying a new type of writing but also to help others discover their passions and see that there is a place for them in STEM. From a young age, I was fortunate to be exposed to computer science and robotics, and those experiences helped me discover a passion for STEM. I know not everyone has that same early exposure, so I hope my website can be a place where you can learn something new and be inspired.
+      </p>
+    </div>
+
+  </main>
+
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>
