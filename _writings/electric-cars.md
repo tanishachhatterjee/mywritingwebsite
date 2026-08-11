@@ -1,6 +1,7 @@
 ---
 title: "⟡ Electric Cars: The Future of Transportation"
 subtitle: "Originally published on my old website, 2024."
+section: informational
 category: "Technology & Sustainability"
 date: 2024-04-01
 ---
