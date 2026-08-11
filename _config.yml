@@ -1,0 +1,13 @@
+title: Tanisha writes!
+
+collections:
+  writings:
+    output: true
+    permalink: /writing/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "writings"
+    values:
+      layout: "writing-detail"

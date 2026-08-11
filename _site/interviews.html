@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanisha writes!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()" aria-label="toggle work menu">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="informational.html">informational</a>
+          <a href="narratives.html">narratives</a>
+          <a href="fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="interviews.html" class="active">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <p class="section-label">interviews</p>
+    <h1>coming soon.</h1>
+    <p style="max-width: 520px; color: #555; line-height: 1.8;">
+      This page is where I interview people working in the STEM industry to provide curious students and minorities with exposure to the opportunities available in the STEM field. From a young age, I was fortunate to be exposed to computer science and robotics, and those experiences helped me discover a passion for STEM. I know not everyone has that same early exposure, so I hope these interviews can help others discover their passions and see that there is a place for them in STEM. I hope this is a place where you can learn something new and be inspired. Check back soon! :)
+    </p>
+  </main>
+
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

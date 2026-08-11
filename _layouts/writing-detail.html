@@ -1,0 +1,65 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="/" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="/informational.html">informational</a>
+          <a href="/narratives.html">narratives</a>
+          <a href="/fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="/interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div id="detail-view" style="display: block;">
+      <a class="back-btn" href="/{{ page.section }}.html">
+        <span class="back-arrow"></span> back
+      </a>
+      <p class="detail-label">{{ page.category }}</p>
+      <h1 class="detail-title">{{ page.title }}</h1>
+      <p class="detail-subtitle">{{ page.subtitle }}</p>
+      <div class="detail-body">
+        {{ content }}
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>
