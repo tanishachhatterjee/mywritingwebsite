@@ -1,0 +1,26 @@
+---
+title: "⟡ Optimization, Circuits, & Electromagnetism"
+subtitle: 'Originally published on <a href="https://sites.google.com/stu.wvusd.org/macrocosm-2026/week-1/cluster-recaps?authuser=0" target="_blank">Macrocosm 2026</a> (Cluster 6).'
+intro: "This summer, I attended UC Santa Cruz COSMOS and studied Smart and Sustainable Power. During the program, I joined the e-newsletter team and wrote about what I learned and experienced throughout the four weeks. I hope you enjoy reading Week 1!"
+section: informational
+category: "Smart & Sustainable Power"
+date: 2026-07-12
+---
+
+<p>Welcome to the weekly recap with Cluster 6 - Introduction to Smart and Sustainable Power! Our cluster started off the first day of COSMOS with the concept of energy optimization. Optimization simply means finding the best solution out of many possible solutions. That usually means minimizing or maximizing variables. You might be wondering how this connects to sustainable power. Well, modern power systems have millions of possible ways to supply electricity. Luckily, organizations like ERCOT (Electric Reliability Council of Texas)—one of the organizations we learned about—use optimization algorithms that automatically choose the best solution that keeps electricity cheap, reliable, and efficient while satisfying all physical limits. In other words, optimization is a mathematical tool that helps the electrical grid operate in the best possible way by balancing cost, reliability, and sustainability all at once.</p>
+
+<figure class="article-figure center">
+  <img src="/newspics/optimization .png" alt="Professor Yu Zhang explains the math behind energy optimization.">
+  <figcaption>Professor Yu Zhang explains the math behind energy optimization.</figcaption>
+</figure>
+
+<figure class="article-figure float-left">
+  <img src="/newspics/circuit.jpg" alt="A basic series circuit powering a light bulb.">
+  <figcaption>A basic series circuit powering a light bulb.</figcaption>
+</figure>
+<p>As the week went on, Cluster 6 dived deeper into electricity through circuit labs. Elena Vindrola, a TA for Cluster 6, taught us about a major concept in electricity: Ohm's law! Ohm's law states that the current flowing through a circuit is directly proportional to the voltage and inversely proportional to the resistance (V = I x R). Students also learned about series and parallel circuits. A series circuit has only one path for electricity to flow, meaning the same current passes through every component. On the other hand, a parallel circuit has multiple paths, allowing the same current to split so each component receives the same voltage and can operate independently. One limitation of a series circuit is that if a single component fails, the entire circuit stops working/breaks since it is all connected.</p>
+
+<figure class="article-figure float-right">
+  <iframe width="300" height="533" src="https://www.youtube.com/embed/DqJfpa9wqtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</figure>
+<p>An especially interesting lab we did was building a DC motor. The video shows a red copper coil continuously spinning when a magnet is placed in front of it. The logic behind this cool movement is actually quite simple! The battery sends current through the copper coil, turning it into an electromagnet with its own north and south poles. These poles interact with the permanent magnet's magnetic fields: the coil's south pole is attracted to the magnet's north pole, while the coil's north pole is repelled by the magnet's north pole. This combination of attraction and repulsion creates a torque, causing the coil to spin continuously. That wraps up the first week at COSMOS for Cluster 6! Watt's next (get it?!)? You'll find out in the next issue!</p>
