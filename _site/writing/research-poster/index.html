@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⟡ Analysis of Pressure-Based Energy Harvesting with Intelligent Systems for Crosswalks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="/" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="/">home</a></li>
+      <li><a href="/journey/">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="/informational/">informational</a>
+          <a href="/narratives/">narratives</a>
+          <a href="/fiction/">fiction</a>
+        </div>
+      </li>
+      <li><a href="/interviews/">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div id="detail-view" style="display: block;">
+      <a class="back-btn" href="/informational/">
+        <span class="back-arrow"></span> back
+      </a>
+      <p class="detail-label">Research on Renewable Energy & Machine Learning</p>
+      <h1 class="detail-title">⟡ Analysis of Pressure-Based Energy Harvesting with Intelligent Systems for Crosswalks</h1>
+      <p class="detail-subtitle"></p>
+
+      
+      <p class="detail-intro">In the summer of 2026, I attended UC Santa Cruz COSMOS, where I studied Smart and Sustainable Power. During the program, I worked on a team of four to create a research poster on pressure-based energy harvesting and intelligent systems for crosswalks.</p>
+      
+
+      <div class="detail-body">
+        <iframe src="/poster.pdf" style="width: 100%; height: 90vh; border: none; border-radius: 10px;">
+</iframe>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>
