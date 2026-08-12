@@ -23,7 +23,7 @@ date: 2026-08-02
 </figure>
 <p>We also got to learn about an important topic in sustainability–environmental policies! These policies and regulations are designed to reduce pollution from power plants and encourage cleaner energy production. We learned about two main approaches: command and control policies (C&C) and market based policies. C&C policies require power plants to meet emission limits or install pollution-control technologies, such as scrubbers which remove harmful gases and chemicals from industrial exhaust streams before they are released into the atmosphere. On the other hand, market based policies encourage companies to cut emissions by making pollution more expensive. For example, emissions taxes charge companies for every ton of pollution they emit. Another example is cap and trade, where the government sets a limit on the total amount of pollution that can be released and gives companies emission permits. Companies that reduce their emissions below their limit can sell their unused permits to companies that need more, creating a financial incentive to reduce pollution.</p>
 
-<p>To close out our final newsletter, wI will be signing out by reflecting on my time with Cluster 6 at COSMOS!</p>
+<p>To close out our final newsletter, I will be signing out by reflecting on my time with Cluster 6 at COSMOS!</p>
 
 <figure class="article-figure float-left">
   <img src="/newspics/cosmome.png" alt="cosmos me">
