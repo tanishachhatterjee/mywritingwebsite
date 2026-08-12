@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⟡ Sticker Problem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="/" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="/informational.html">informational</a>
+          <a href="/narratives.html">narratives</a>
+          <a href="/fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="/interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div id="detail-view" style="display: block;">
+      <a class="back-btn" href="/informational.html">
+        <span class="back-arrow"></span> back
+      </a>
+      <p class="detail-label">Current Issue</p>
+      <h1 class="detail-title">⟡ Sticker Problem</h1>
+      <p class="detail-subtitle"></p>
+      <div class="detail-body">
+        <p>On November 21, 2021 Tanisha Chatterjee and her friends went to a volunteering program at Stocklmeir Elementary school for 5th graders. Tanisha and her friends recently found out that they can give stickers to the kindergarteners if they pick up trash or do something kind.</p>
+<p>At first all the kindergarteners were picking up trash and being kind. But after some time, the kindergartens started lying to the 5th graders. "One kindergartener picked up 3 pieces of trash, so I gave her a sticker but after a few minutes she told me she lost her sticker. So I was about to give her another sticker but then I saw on the palm of her hand that there was a sticker I already had given her," says Tanisha Chatterjee.</p>
+<p>The kindergarteners feel like whoever has the most stickers gets a prize, so they decide to lie because they're too young to understand that they only get 1 sticker. Tanisha and her friends continue taking care of the kindergarteners, but they keep asking for more stickers.</p>
+<p>So after lunch ended, Tanisha Chatterjee and her friends went to Ms. Mommer, the vice principal of Stocklmeir Elementary school. Tanisha and her friends told Ms. Mommer about what's been happening with the stickers. Ms. Mommer told Tanisha Chatterjee and her friends, "to keep a track on which kids already got a sticker, and when it's reasonable to give a sticker."</p>
+<p>If the kindergarteners continue lying to the 5th graders, Ms. Lee (the teacher who supervises the lunch buddy meetings) might have to stop the sticker policy entirely.</p>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

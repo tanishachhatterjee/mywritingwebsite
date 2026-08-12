@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⟡ The Horrible Pushing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="/" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="/informational.html">informational</a>
+          <a href="/narratives.html">narratives</a>
+          <a href="/fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="/interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div id="detail-view" style="display: block;">
+      <a class="back-btn" href="/informational.html">
+        <span class="back-arrow"></span> back
+      </a>
+      <p class="detail-label">Current Issue</p>
+      <h1 class="detail-title">⟡ The Horrible Pushing Game</h1>
+      <p class="detail-subtitle"></p>
+      <div class="detail-body">
+        <p>On January 26, 2022 the kindergarteners at Stocklmeir Elementary School made a new game where they would bolt and pounce on each other. One witness even fell down and injured her leg very badly, and needed the assistance of an adult.</p>
+<p>Many of the 5th graders who volunteered to take care of the kindergarteners ordered and demanded the kindergarteners to immediately stop playing that game. But the kindergarteners refused to stop.</p>
+<p>Multiple of the kindergarteners continued getting seriously injured. Witnesses were not able to fully identify the mysterious suspects who started the game. The 5th graders tried to make up a new game, but reluctantly there were still some kids playing the harmful game.</p>
+<p>Although the kindergarteners enjoyed the game at first the fun quickly faded away as they continued playing. The game took an utter turn causing many of the kids to get injured. If this game continues thriving many of the kids will continue getting injured.</p>
+<p>This dreadful and pain inducing game needs to come to a stop at once.</p>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

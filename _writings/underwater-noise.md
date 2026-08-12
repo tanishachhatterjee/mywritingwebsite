@@ -1,0 +1,11 @@
+---
+title: "⟡ The Dangers of Underwater Noise"
+section: informational
+category: "Environment"
+date: 2023-03-01
+---
+
+<p>For many years, there has been a debate whether or not underwater noises disturb marine life. Scientists have conducted studies by attaching a digital recording device to beaked whales to check how they respond to noises. Some of the studies showed no negative impacts, while others showed a large amount of disruption. Although some studies suggest that sonar activities are not detrimental to marine life, it has been shown that it can disturb their communication and behavioral patterns. Therefore, sonar activities have a negative impact on marine life.</p>
+<p>The Navy's studies indicate that sonar does not adversely harm marine animals; however, an incident in the Bahamas suggests otherwise. According to What Underwater Noise?, "The issue became critical after an incident in 2000 in which 17 whales became stranded in the Bahamas." These underwater noises caused disruptions in beaked whales' communication with each other, leaving them separated from their pod. Also, this severe incident can stress a beaked whale, which can result in changes to their behavioral patterns.</p>
+<p>Scientists have studied marine life patterns during sonar activities, showing that these underwater noises disturb their behavioral patterns. According to What to Do about Underwater Noise, "The data suggested that beaked whales were especially sensitive to even low levels of underwater noise." To this point, even low levels of sonar activity have a significant impact on animal behavior, causing interruptions to their feeding and diving patterns. These underwater noises destroy the health and wellbeing of marine life.</p>
+<p>In light of these findings, sonar activity has been shown to be disruptive to marine life, causing them to become stranded and responsible for changing their behavior patterns. Should these sonar activities continue, more marine creatures are likely to become stranded or separated from their groups. Additionally, stress could change their patterns, causing a shorter life span, which may also result in extinction. We need to immediately put an end to sonar activity.</p>

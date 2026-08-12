@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⟡ Too Many Items in the Lost & Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="/" class="nav-logo">Tanisha C.</a>
+    <ul class="nav-links">
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/journey.html">journey</a></li>
+      <li class="nav-dropdown-item" id="workItem">
+        <button class="nav-trigger" onclick="toggleDrop()">
+          writing <span class="chevron"></span>
+        </button>
+        <div class="dropdown">
+          <a href="/informational.html">informational</a>
+          <a href="/narratives.html">narratives</a>
+          <a href="/fiction.html">fiction</a>
+        </div>
+      </li>
+      <li><a href="/interviews.html">interviews</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div id="detail-view" style="display: block;">
+      <a class="back-btn" href="/informational.html">
+        <span class="back-arrow"></span> back
+      </a>
+      <p class="detail-label">Current Issue</p>
+      <h1 class="detail-title">⟡ Too Many Items in the Lost & Found</h1>
+      <p class="detail-subtitle"></p>
+      <div class="detail-body">
+        <p>The lost &amp; found cart at Stocklmeir Elementary School, Sunnyvale CA receives many lost items everyday. All the items have started to pile up in the cart. Many of the owners of the lost items have not come back to the lost &amp; found to receive their lost items. Some students believe that if they go to the lost &amp; found to find their lost item their time will be wasted.</p>
+<p>This is slowly becoming a problem at Stocklmeir Elementary School, because if the cart continues piling up with items there will be no more space for any new lost items. Which then will be harder for the owner to find their lost item or items.</p>
+<p>Students will need to start taking responsibility with their items. Or sooner than later Stocklmeir might need to remove the lost &amp; found cart because it keeps piling up. Tanisha Chatterjee a student at Stocklmeir believes that, "Students who lost items should go to the lost &amp; found and find their item because otherwise its a waste of money for whoever bought the item for them."</p>
+<p>If this problem continues lots of money will be wasted for whoever bought an item for a student, and they lost it. It is important for the students who lost an item to go to the lost &amp; found to search for their items or otherwise Stocklmeir might have to take the lost &amp; found away.</p>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+
+<script>
+  function toggleDrop() {
+    document.getElementById('workItem').classList.toggle('open');
+  }
+  document.addEventListener('click', e => {
+    if (!document.getElementById('workItem').contains(e.target)) {
+      document.getElementById('workItem').classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

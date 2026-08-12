@@ -1,0 +1,27 @@
+---
+title: "⟡ All About COVID-19"
+section: informational
+category: "Health"
+date: 2020-03-01
+---
+
+<h2>What is COVID-19?</h2>
+<p>COVID-19 is a very dangerous virus. COVID-19 is in the air and will always be in the air but that doesn't mean you're always going to feel sick when you go outside. But you can get COVID-19 if your immune system is strong. You are probably wondering "what is an immune system?" First of all we all have an immune system. Our immune system is something that prevents you from getting sick all the time but if your immune system is weak you can get sick more quickly than other people. "How to have a strong immune system." The first step of making your immune system strong is to eat vegetables and fruits more than eating junk food. It's okay if you have junk food sometimes but it's not okay if you eat junk food all the time cuz if you eat junk food all the time your immune system is going to be very very weak and that means you can't fight off viruses and diseases that well as other people can. The last step of making your immune system strong is to work out. When I'm saying workout I'm not saying that you have to work out for three straight hours I'm talking about you should workout for at least 30 minutes per day or 1 hour per day that should be good enough for your body. Running, jogging, doing push ups, riding your bike, doing jumping jacks, and doing any type of exercise is a great workout and also it's fun you won't be getting bored like you could cut up half an hour an hour and different sections and do different activities.</p>
+<h2>Is COVID-19 dangerous?</h2>
+<p>COVID-19 is very dangerous. You are probably wondering why is COVID-19 dangerous? COVID-19 is dangerous because it kills people and because it also makes your immune system weaker. If your immune system is weak you can get sick quicker than normal people do.</p>
+<h2>Can we still go outside?</h2>
+<p>You can still go outside. Except you can't go to restaurants, malls, car washes, nail salons, spas, you can't go anywhere except the grocery store if you are in need of groceries. But most people now are using instacart and other online grocery store apps so they don't need to go to the grocery stores. But of course a lot of people are still going to the grocery stores. People are still going for walks outside but if you go for a walk anywhere make sure you wear a mask to prevent you from getting COVID-19.</p>
+<h2>Why do we have to be quarantined in this pandemic?</h2>
+<p>We have to be quarantined in this pandemic because we don't want to spread the COVID-19 to everyone. We are quarantined so we have a lower chance of getting COVID-19 cuz if we are not quarantined it is harder for all the doctors and nurses to take care of us. If there are trillions of people who are sick doctors and nurses will not be able to take care of them and the doctors and nurses will also get very sick too.</p>
+<h2>Fun Facts</h2>
+<p>1. COVID-19 came from Wuhan, China.</p>
+<p>2. Scientists and doctors think that a bat caused COVID-19.</p>
+<p>3. Some people think that COVID-19 will go away after June comes and will come back when winter starts again.</p>
+<p>4. COVID-19 attaches to your cell and when your cell can't hold it anymore it pops and COVID-19 goes all over your body and you start getting sick.</p>
+<p>5. Doctors are saying that it will take about a year to find a vaccine for COVID-19.</p>
+<p>6. COVID-19 looks like a tiny ball that has spikes.</p>
+<p>7. COVID-19 has glucose in it.</p>
+<p>8. You have a higher chance of getting COVID-19 if you have another disease.</p>
+<p>9. If you are 65+ you also have a higher chance of getting COVID-19.</p>
+<p>10. You can not get COVID-19 by eating food.</p>
+<p>11. If you wash your hands a lot you have a lower chance of getting COVID-19.</p>
