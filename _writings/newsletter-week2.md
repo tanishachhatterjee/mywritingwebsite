@@ -1,0 +1,30 @@
+---
+title: "⟡ Future AI, Photovoltaics, & Arc Flashes"
+subtitle: 'Originally published on <a href="https://sites.google.com/stu.wvusd.org/macrocosm-2026/week-2/cluster-recaps?authuser=0" target="_blank">Macrocosm 2026</a> (Cluster 6).'
+intro: "In the summer of 2026, I attended UC Santa Cruz COSMOS, where I studied Smart and Sustainable Power. During the program, I joined the e-newsletter team and wrote about what I learned and experienced throughout the four weeks. I hope you enjoy reading Week 2!"
+section: informational
+category: "Smart & Sustainable Power"
+date: 2026-07-19
+---
+
+<figure class="article-figure float-left">
+  <img src="/newspics/cogen2.png" alt="A monitor displaying real-time data.">
+  <figcaption>A monitor displaying real-time data.</figcaption>
+</figure>
+<p>Cluster 6 - Introduction to Smart and Sustainable Power started off the week with an exciting field trip to the UC Santa Cruz cogeneration (cogen) plant! Anthony Brunetti, the cogen supervisor, gave us a tour of the facility and explained how it keeps the campus running. Brunetti shared that the plant generates about 75% of the electricity used by UCSC’s science and engineering buildings. One thing that really surprised us was learning that all of the little glowing sensors you see around campus in the libraries, lecture halls, and other campus buildings are constantly being monitored. Operators at the cogen plant keep an eye on sensors in around 600 buildings, taking turns working 10-hour shifts to respond to any problems that come up.</p>
+
+<p>Of course, someone had to ask about the latest hot topic–artificial intelligence. Brunetti explained that, no matter how smart AI gets, there will always need to be a human operator watching the system. He shared a recent example where a cooling tower went off because of a sensor issue. The automated system tried to restore the tower by increasing the water pressure to a dangerous level. Luckily, one of the operators caught the mistake and fixed the problem before anything serious happened.</p>
+<p>Overall, Brunetti explained that AI can definitely help make the plant more efficient, but it can’t fully replace human operators. Instead, the team plans to test AI models in a sandbox environment—a safe, isolated digital space used to test software—so they can experiment with the system without impacting real-world operations.</p>
+
+<figure class="article-figure center">
+  <img src="/newspics/p-type-cell.jpg" alt="Inside a solar cell.">
+  <figcaption>Inside a solar cell.</figcaption>
+</figure>
+<p>Fun fact! Did you know that UCSC’s solar parking canopy generates more than 3 million kWh of electricity each year—enough to power more than 330 homes annually? This week, Cluster 6 got to understand how the solar panels on homes, parking structures, and other buildings actually work. We started by learning about a solar (photovoltaic/PV) cell, an electronic device that converts sunlight directly into electricity using the photovoltaic effect—the process of generating voltage and electric current when sunlight hits certain materials. Most solar cells are made from silicon, a semiconductor that can conduct electricity under the right conditions. When sunlight (photons) hits the silicon, it gives energy to electrons, knocking some of them free. A built-in electric field then directs these electrons through a circuit, creating an electric current. We also learned that pure silicon doesn’t conduct electricity very well on its own because its electrons are tightly packed. To improve its conductivity, scientists use a process called doping, adding tiny amounts of other elements to create more free electrons. This allows solar cells to convert sunlight into electricity much more efficiently.</p>
+
+<figure class="article-figure float-left">
+  <img src="/newspics/arcflash.jpg" alt="Arc flash">
+  <figcaption></figcaption>
+</figure>
+<p>To finish off the week, Cluster 6 got to go on a field trip to PG&E (Pacific Gas & Electric Company). We got an overview on how they provide power to our community everyday using simulations, real life testing, and smart sensors. One of the most interesting things we learned about was arc flashes—sudden, powerful electrical explosions that occur when electric current leaves its intended path and travels through the air between two conductors or to the ground. Our tour guide gave a simple example: imagine plugging in a charger when a metal object accidentally falls onto the exposed plug. That could create a small arc flash. Now imagine the same thing happening on one of the high-voltage utility poles that PG&E workers maintain. That’s why PG&E simulates arc flashes at its testing facilities—to make sure the protective gear their workers wear can withstand these dangerous events. We also learned how PG&E plans to incorporate artificial intelligence and machine learning. By analyzing data collected from thousands of smart sensors that monitor things like voltage, current, temperature, and power line conditions, AI models can help identify equipment that may be at risk of failing. This allows PG&E crews to inspect and repair infrastructure before problems lead to outages, making the electrical grid safer and more reliable.</p>
+<p>Thank you for joining us in our 2nd week at COSMOS! See you in the next rotation (get it?!)!</p>
